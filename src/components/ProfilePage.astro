@@ -1,0 +1,149 @@
+---
+import SignalMap from "./SignalMap.astro";
+import { links, profile, type Locale } from "@/content/profile";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const nav = profile.nav[locale];
+const hero = profile.hero[locale];
+const proof = profile.proof[locale];
+const summary = profile.summary[locale];
+const experience = profile.experience[locale];
+const projects = profile.projects[locale];
+const skills = profile.skills[locale];
+const footer = profile.footer[locale];
+---
+
+<header class="site-header" aria-label="Primary navigation">
+  <div class="site-header__inner">
+    <a class="brand" href={locale === "en" ? "/en/" : "/es/"} aria-label="José Siapo Rodríguez home">
+      <span class="brand__mark">
+        <img src="/jsiapo.png" alt="" width="38" height="38" decoding="async" />
+      </span>
+      <span>{profile.name}</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#profile">{nav.summary}</a>
+      <a href="#experience">{nav.experience}</a>
+      <a href="#projects">{nav.projects}</a>
+      <a href="#skills">{nav.skills}</a>
+      <a href={links.cv} target="_blank" rel="noreferrer">{nav.cv}</a>
+      <a class="language-switch" href={nav.langUrl}>{nav.lang}</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-shell">
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">{hero.eyebrow}</p>
+        <h1>{hero.title}</h1>
+        <p class="hero__intro">{hero.intro}</p>
+        <div class="hero__actions" aria-label="Profile links">
+          <a class="button button--primary" href={links.cv} target="_blank" rel="noreferrer">{hero.cv}</a>
+          <a class="button" href={links.linkedin} target="_blank" rel="noreferrer">{hero.linkedin}</a>
+          <a class="button" href={links.github} target="_blank" rel="noreferrer">{hero.github}</a>
+          <a class="button" href={links.gitlab} target="_blank" rel="noreferrer">{hero.gitlab}</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <SignalMap />
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Career highlights">
+      {proof.map((item) => (
+        <article>
+          <strong>{item.value}</strong>
+          <span>{item.label}</span>
+        </article>
+      ))}
+    </section>
+
+    <section id="profile" class="section section--summary">
+      <div class="section__heading">
+        <p class="section-label">{summary.label}</p>
+        <h2>{summary.title}</h2>
+      </div>
+      <div class="section__body prose">
+        {summary.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section__heading">
+        <p class="section-label">{experience.label}</p>
+        <h2>{experience.title}</h2>
+      </div>
+      <div class="section__body timeline">
+        {experience.items.map((item) => (
+          <article class="timeline-item">
+            <div class="timeline-item__meta">
+              <span>{item.period}</span>
+            </div>
+            <div class="timeline-item__content">
+              <h3>{item.company}</h3>
+              <p>{item.role}</p>
+              <ul>
+                {item.bullets.map((bullet) => <li>{bullet}</li>)}
+              </ul>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section id="projects" class="section section--projects">
+      <div class="section__heading">
+        <p class="section-label">{projects.label}</p>
+        <h2>{projects.title}</h2>
+      </div>
+      <div class="section__body">
+        <div class="project-intro">
+          <p>{projects.intro}</p>
+        </div>
+        <div class="project-grid">
+          {projects.items.map((project) => (
+            <article class="project-card">
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <div class="tag-row">
+                {project.tags.map((tag) => <span>{tag}</span>)}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section__heading">
+        <p class="section-label">{skills.label}</p>
+        <h2>{skills.title}</h2>
+      </div>
+      <div class="section__body skills-grid">
+        {skills.groups.map((group) => (
+          <article class="skill-group">
+            <h3>{group.name}</h3>
+            <ul>
+              {group.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>{footer}</p>
+    <div>
+      <a href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href={links.github} target="_blank" rel="noreferrer">GitHub</a>
+      <a href={links.gitlab} target="_blank" rel="noreferrer">GitLab</a>
+    </div>
+  </footer>
+</div>

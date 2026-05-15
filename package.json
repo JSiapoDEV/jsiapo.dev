@@ -1,0 +1,20 @@
+{
+  "name": "jsiapo-dev",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "engines": {
+    "node": "24.15.0",
+    "npm": ">=9.6.5"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "astro": "^6.3.3",
+    "typescript": "^6.0.3"
+  }
+}
