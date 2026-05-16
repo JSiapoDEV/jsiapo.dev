@@ -26,6 +26,7 @@
 html {
   background: var(--paper);
   color: var(--ink);
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
@@ -38,6 +39,7 @@ body {
     var(--paper);
   background-size: 56px 56px;
   color: var(--ink);
+  overflow-x: clip;
 }
 
 body::before {
@@ -85,6 +87,7 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
+  min-width: 0;
   gap: 12px;
   font-weight: 700;
 }
@@ -109,6 +112,7 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
+  min-width: 0;
   gap: 18px;
   color: var(--muted);
   font-size: 0.92rem;
@@ -184,6 +188,7 @@ h1 {
   line-height: 0.94;
   letter-spacing: 0;
   text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .hero__intro {
@@ -204,6 +209,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
   min-height: 46px;
   padding: 0 18px;
   border: 1px solid var(--line-strong);
@@ -620,25 +626,46 @@ ul {
 }
 
 @media (max-width: 640px) {
-  .site-header__inner,
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .site-header__inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px 14px;
     padding: 14px 0;
   }
 
+  .brand {
+    flex: 0 1 calc(100% - 64px);
+    max-width: calc(100% - 64px);
+  }
+
+  .brand > span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .nav-links {
+    order: 3;
     width: 100%;
     justify-content: flex-start;
-    gap: 10px 12px;
-    font-size: 0.86rem;
+    flex-wrap: wrap;
+    gap: 10px 11px;
+    font-size: 0.8rem;
+  }
+
+  .language-switch {
+    order: 2;
+    margin-left: auto;
   }
 
   h1 {
-    font-size: clamp(2.05rem, 9.4vw, 2.25rem);
+    font-size: clamp(2rem, 9vw, 2.2rem);
+    line-height: 1;
   }
 
   .hero__content,
@@ -646,11 +673,27 @@ ul {
   .hero__actions,
   h1 {
     width: 100%;
-    max-width: calc(100vw - 28px);
+    max-width: 100%;
+  }
+
+  .eyebrow,
+  .section-label {
+    font-size: 0.68rem;
+    line-height: 1.4;
   }
 
   .signal-map {
     width: 100%;
+  }
+
+  .signal-map__core {
+    width: 72px;
+    height: 72px;
+  }
+
+  .signal-node {
+    padding: 6px 8px;
+    font-size: 0.62rem;
   }
 
   .button {
