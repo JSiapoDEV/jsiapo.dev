@@ -74,14 +74,6 @@ En mi rol actual también impulso flujos de ingeniería asistida por IA usando G
 - Implementé servicios backend con Node.js, Express y NestJS siguiendo principios de Clean Architecture.
 - Configuré servidores Linux con Docker y gestioné bases de datos MySQL para alojamiento de aplicaciones.
 
-## Proyectos personales
-
-**MD2PDF** · [md2pdf.studio](https://md2pdf.studio/)  
-Herramienta para convertir Markdown en documentos PDF, HTML e imágenes con estilos listos para compartir. Refleja experiencia en developer tooling, generación documental y flujos prácticos para equipos técnicos.
-
-**FinHub** · [f-hub.pro](https://f-hub.pro/)  
-Proyecto personal de finanzas e inversiones orientado a convertir actividad financiera en decisiones más claras mediante datos estructurados, automatización y análisis.
-
 ## Educación
 
 **Bachiller en Ciencias de la Computación**  
