@@ -1,0 +1,99 @@
+@page {
+  size: A4;
+  margin: 10mm 11mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #171a18;
+  font-family:
+    "Aptos",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 9.2pt;
+  line-height: 1.28;
+}
+
+body {
+  max-width: 184mm;
+  margin: 0 auto;
+}
+
+a {
+  color: #1d536c;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 1.4mm;
+  color: #111513;
+  font-size: 18.5pt;
+  line-height: 1;
+}
+
+h1 + p {
+  margin-bottom: 3.4mm;
+  color: #3f4845;
+  font-size: 8.6pt;
+}
+
+h2 {
+  margin: 3.8mm 0 1.6mm;
+  padding-bottom: 0.85mm;
+  border-bottom: 0.35mm solid #d8d2c8;
+  color: #203f52;
+  font-size: 9.6pt;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 2.8mm 0 0.8mm;
+  color: #172621;
+  font-size: 9.3pt;
+  line-height: 1.2;
+}
+
+h3 + p {
+  margin-bottom: 1.3mm;
+  color: #4c5551;
+  font-size: 8.5pt;
+}
+
+p {
+  margin-bottom: 1.45mm;
+}
+
+ul {
+  margin: 0 0 1.9mm;
+  padding-left: 4mm;
+}
+
+li {
+  margin-bottom: 0.85mm;
+  padding-left: 0.6mm;
+}
+
+strong {
+  color: #161817;
+}
+
+@media print {
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

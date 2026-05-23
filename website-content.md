@@ -4,7 +4,7 @@ Este documento define el contenido base de la web personal. La página estara or
 
 ## Objetivo
 
-Presentar a José Siapo Rodríguez como un ingeniero con base técnica solida, experiencia real coordinando entregas y mentoring, y una trayectoria clara hacia roles de liderazgo técnico.
+Presentar a José Siapo Rodríguez como un ingeniero con base técnica sólida, experiencia formal como Tech Lead en YAWI, experiencia actual como Backend Senior en Softtek/Rimac, y una trayectoria clara hacia AI Coding & Engineering Governance.
 
 La web debe evitar encasillarlo solamente como Backend Senior. La experiencia backend debe aparecer como evidencia de profundidad técnica, no como etiqueta principal del sitio.
 
@@ -12,7 +12,7 @@ La web debe evitar encasillarlo solamente como Backend Senior. La experiencia ba
 
 - Reclutadores técnicos.
 - Hiring managers.
-- Liderés de tecnologia que evalúan perfiles para roles senior, staff-adjacent o technical lead.
+- Líderes de tecnología que evalúan perfiles para roles senior, staff-adjacent, technical lead o AI Coding governance.
 
 ## Idioma
 
@@ -35,8 +35,9 @@ Debe haber un botón para abrir el CV en una nueva pestaña.
 
 Pendiente:
 
-- Usar un nombre limpio para el archivo, por ejemplo: `José-Siapo-Rodríguez-CV.pdf`.
-- Decidir si se usa el CV actual o si se prepara una versión actualizada más alineada a liderazgo técnico.
+- Mantener el CV fuente en Markdown dentro del repo.
+- Publicar el PDF final en `public/jose-siapo-cv.pdf` para descarga directa desde la web.
+- Evitar que el CV sugiera que el cargo actual en Softtek/Rimac es Tech Lead; esa experiencia formal corresponde a YAWI.
 
 ## Hero
 
@@ -44,15 +45,15 @@ Pendiente:
 
 EN:
 
-> Technical Leadership Through Hands-On Engineering
+> Technical leadership for AI-assisted engineering
 
-> 6+ years building production systems, coordinating delivery, mentoring developers, modernizing platforms, and automating engineering workflows with AI.
+> 6+ years building production systems, formal Tech Lead experience at YAWI, and current hands-on work shaping safer AI Coding workflows with agents, skills, MCP servers, and engineering standards.
 
 ES:
 
-> Liderazgo técnico desde la ingeniería práctica
+> Liderazgo técnico para ingeniería asistida por IA
 
-> Más de 6 años construyendo sistemás productivos, coordinando entregas, mentoreando desarrolladores, modernizando plataformás y automatizando flujos de ingeniería con IA.
+> Más de 6 años construyendo sistemas productivos, experiencia formal como Tech Lead en YAWI y trabajo actual dando forma a flujos seguros de AI Coding con agentes, skills, servidores MCP y estándares de ingeniería.
 
 ### Notas de tono
 
@@ -71,9 +72,9 @@ Beyond implementation, I have coordinated technical delivery across development,
 
 ### ES
 
-Trabajo entre arquitectura backend, sistemás cloud, coordinación de entregas y herramientas para equipos de desarrollo. Durante más de 6 años he construido y modernizado servicios productivos con Node.js, TypeScript, AWS, pipelines CI/CD, pruebas automatizadas y prácticas de observabilidad.
+Trabajo entre arquitectura backend, sistemas cloud, coordinación de entregas y herramientas para equipos de desarrollo. Durante más de 6 años he construido y modernizado servicios productivos con Node.js, TypeScript, AWS, pipelines CI/CD, pruebas automatizadas y prácticas de observabilidad.
 
-Además de la implementación, he coordinado entregas técnicas con equipos de desarrollo, QA, arquitectura, seguridad, infraestructura y negocio. He mentoreado desarrolladores, ayudado a estandarizar buenas prácticas e introducido flujos asistidos por IA usando agentes, skills y servidores MCP para reducir fricción operativa y mejorar la productividad del equipo.
+Fui Tech Lead Mobile en YAWI, liderando entregas, decisiones técnicas, estándares y mentoring para uno de los principales productos de la empresa. Hoy, como Backend Senior en Softtek/Rimac, coordino con desarrollo, QA, arquitectura, seguridad, infraestructura, DevSecOps y negocio en un entorno enterprise regulado. También introduzco flujos asistidos por IA usando agentes, skills y servidores MCP para reducir fricción operativa y mejorar la productividad del equipo.
 
 ## Experiencia
 
@@ -102,7 +103,7 @@ ES:
 
 ### YAWI
 
-Rol: Lider Tecnico Mobile y Analista Desarrollador  
+Rol: Tech Lead Mobile y Analista Desarrollador  
 Periodo: Noviembre 2021 - Diciembre 2024
 
 EN:
@@ -117,8 +118,8 @@ EN:
 
 ES:
 
-- Lideré el frente técnico mobile de Agritracer Neo, coordinando entregas por sprint y decisiones técnicas para uno de los principales productos de la empresa.
-- Guié decisiones técnicas clave como la migración a Jetpack Compose y Kotlin 2.0, evaluando impacto, complejidad y prioridad de implementación.
+- Fui Tech Lead del frente mobile de Agritracer Neo, coordinando entregas por sprint, decisiones técnicas y prioridades de implementación para uno de los principales productos de la empresa.
+- Asumí ownership técnico del frente mobile, guiando estándares de implementación, revisión técnica y decisiones clave como la migración a Jetpack Compose y Kotlin 2.0.
 - Diseñé y desarrolle servicios backend con Node.js, TypeScript, Clean Architecture, AWS Lambda, API Gateway, CloudWatch, S3 y DynamoDB.
 - Mentoree a un desarrollador junior mediante asignación de tareas, feedback técnico y desarrollo de autonomía.
 - Capacité al equipo en nuevas tecnologías, prácticas de implementación y estándares de calidad.
@@ -289,22 +290,22 @@ Botones recomendados:
 
 EN:
 
-- View CV
+- Download CV
 - LinkedIn
 - GitHub
 - GitLab
 
 ES:
 
-- Ver CV
+- Descargar CV
 - LinkedIn
 - GitHub
 - GitLab
 
 ## Pendientes
 
-- Confirmar headline final.
-- Confirmar si el sitio será una sola página o tendrá páginas separadas para experiencia/proyectos.
+- Mantener el headline alineado a AI Coding & Engineering Governance sin sugerir que Softtek/Rimac es un cargo Tech Lead.
+- Mantener el sitio como una sola página bilingüe mientras el objetivo sea perfil profesional.
 - Confirmar detalles reales de FinHub.
 - Confirmar detalles reales de MD2PDF.
 - Decidir si se actualizara el CV antes de publicarlo.

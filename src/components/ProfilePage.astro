@@ -11,6 +11,7 @@ const nav = profile.nav[locale];
 const hero = profile.hero[locale];
 const proof = profile.proof[locale];
 const summary = profile.summary[locale];
+const operating = profile.operating[locale];
 const experience = profile.experience[locale];
 const projects = profile.projects[locale];
 const skills = profile.skills[locale];
@@ -30,7 +31,7 @@ const footer = profile.footer[locale];
       <a href="#experience">{nav.experience}</a>
       <a href="#projects">{nav.projects}</a>
       <a href="#skills">{nav.skills}</a>
-      <a href={links.cv} target="_blank" rel="noreferrer">{nav.cv}</a>
+      <a href={links.cv} download="jose-siapo-cv.pdf">{nav.cv}</a>
     </nav>
     <a class="language-switch" href={nav.langUrl}>{nav.lang}</a>
   </div>
@@ -44,7 +45,7 @@ const footer = profile.footer[locale];
         <h1>{hero.title}</h1>
         <p class="hero__intro">{hero.intro}</p>
         <div class="hero__actions" aria-label="Profile links">
-          <a class="button button--primary" href={links.cv} target="_blank" rel="noreferrer">{hero.cv}</a>
+          <a class="button button--primary" href={links.cv} download="jose-siapo-cv.pdf">{hero.cv}</a>
           <a class="button" href={links.linkedin} target="_blank" rel="noreferrer">{hero.linkedin}</a>
           <a class="button" href={links.github} target="_blank" rel="noreferrer">{hero.github}</a>
           <a class="button" href={links.gitlab} target="_blank" rel="noreferrer">{hero.gitlab}</a>
@@ -71,6 +72,26 @@ const footer = profile.footer[locale];
       </div>
       <div class="section__body prose">
         {summary.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </section>
+
+    <section class="section section--operating">
+      <div class="section__heading">
+        <p class="section-label">{operating.label}</p>
+        <h2>{operating.title}</h2>
+      </div>
+      <div class="section__body">
+        <div class="operating-intro">
+          <p>{operating.intro}</p>
+        </div>
+        <div class="operating-grid">
+          {operating.items.map((item) => (
+            <article class="operating-card">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
 
@@ -114,6 +135,9 @@ const footer = profile.footer[locale];
               <div class="tag-row">
                 {project.tags.map((tag) => <span>{tag}</span>)}
               </div>
+              <a class="project-link" href={project.url} target="_blank" rel="noreferrer">
+                {projects.actionLabel}
+              </a>
             </article>
           ))}
         </div>
