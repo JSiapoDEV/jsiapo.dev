@@ -36,19 +36,19 @@ export const profile = {
   hero: {
     en: {
       eyebrow: "AI Coding Governance · Architecture · Delivery · Security",
-      title: "Technical leadership for AI-assisted engineering",
+      title: "Technical leadership for governed AI Coding",
       intro:
-        "6+ years building production systems, formal Tech Lead experience at YAWI, and current hands-on work shaping safer AI Coding workflows with agents, skills, MCP servers, and engineering standards.",
+        "6+ years in software engineering, 3+ years in technical leadership, and current hands-on work as a senior backend engineer and technical reference for AI Coding workflows with GitHub Copilot Enterprise, agents, skills, instructions, MCP servers, security, and engineering standards.",
       cv: "Download CV",
       linkedin: "LinkedIn",
       github: "GitHub",
       gitlab: "GitLab",
     },
     es: {
-      eyebrow: "AI Coding · Arquitectura · Seguridad",
-      title: "Liderazgo técnico para AI Coding",
+      eyebrow: "AI Coding Governance · Arquitectura · Seguridad",
+      title: "Liderazgo técnico para gobernar AI Coding",
       intro:
-        "Más de 6 años construyendo sistemas productivos, experiencia formal como Tech Lead en YAWI y trabajo actual con agentes, skills, MCP y estándares de ingeniería.",
+        "Más de 6 años en ingeniería de software, más de 3 años en liderazgo técnico y trabajo actual como Backend Senior y referente técnico en AI Coding con GitHub Copilot Enterprise, agentes, skills, instructions, MCP, seguridad y estándares de ingeniería.",
       cv: "Descargar CV",
       linkedin: "LinkedIn",
       github: "GitHub",
@@ -72,18 +72,18 @@ export const profile = {
       label: "Profile",
       title: "I work where systems, delivery, and engineering governance meet.",
       paragraphs: [
-        "I build and modernize production systems where reliability, maintainability, traceability, and delivery coordination matter.",
-        "I was Mobile Tech Lead at YAWI, leading delivery, technical decisions, standards, and mentoring for one of the company's main products. Today, as a Senior Backend Developer at Softtek/Rimac, I coordinate with development, QA, architecture, security, infrastructure, DevSecOps, and business teams in a regulated enterprise environment.",
-        "I help teams adopt AI Coding tools in a controlled way: defining standards, designing agents and instructions, reusing artifacts, and keeping security, versioning, and technical review visible.",
+        "I lead and modernize production systems where reliability, maintainability, traceability, and delivery coordination matter.",
+        "I was Mobile Tech Lead at YAWI, leading delivery, technical decisions, standards, and mentoring for one of the company's main products. Today, at Softtek/Rimac, I work as a Senior Backend Developer and technical reference for backend modernization and AI Coding governance in a regulated enterprise environment.",
+        "I help teams turn AI Coding experiments into governed engineering practice: standards, artifact catalogs, agents, skills, instructions, MCP servers, security, versioning, and technical review.",
       ],
     },
     es: {
       label: "Perfil",
       title: "Trabajo donde se cruzan sistemas, entrega y gobierno de ingeniería.",
       paragraphs: [
-        "Construyo y modernizo sistemas productivos donde importan la confiabilidad, la mantenibilidad, la trazabilidad y la coordinación de entrega.",
-        "Fui Tech Lead Mobile en YAWI, liderando entregas, decisiones técnicas, estándares y mentoring para uno de los principales productos de la empresa. Hoy, como Backend Senior en Softtek/Rimac, coordino con desarrollo, QA, arquitectura, seguridad, infraestructura, DevSecOps y negocio en un entorno enterprise regulado.",
-        "Ayudo a equipos a adoptar herramientas de AI Coding de forma controlada: definiendo estándares, diseñando agentes e instrucciones, reutilizando artefactos y manteniendo visibles seguridad, versionamiento y revisión técnica.",
+        "Lidero y modernizo sistemas productivos donde importan la confiabilidad, la mantenibilidad, la trazabilidad y la coordinación de entrega.",
+        "Fui Tech Lead Mobile en YAWI, liderando entregas, decisiones técnicas, estándares y mentoring para uno de los principales productos de la empresa. Hoy, en Softtek/Rimac, trabajo como Backend Senior y referente técnico para modernización backend y gobierno de AI Coding en un entorno enterprise regulado.",
+        "Ayudo a equipos a convertir experimentos con AI Coding en práctica de ingeniería gobernable: estándares, catálogo de artefactos, agentes, skills, instructions, MCP, seguridad, versionamiento y revisión técnica.",
       ],
     },
   },
@@ -97,12 +97,12 @@ export const profile = {
         {
           title: "Standards and catalog",
           description:
-            "Define reusable artifacts, naming conventions, review criteria, ownership, lifecycle, and versioning for agents, skills, and instructions.",
+            "Define reusable artifacts, naming conventions, review criteria, ownership, lifecycle, and versioning for agents, skills, instructions, prompts, and MCP servers.",
         },
         {
           title: "Agents and instructions",
           description:
-            "Design and evaluate coding agents, repository analysis flows, MCP servers, and task-specific instructions around real development needs.",
+            "Design and evaluate coding agents, repository analysis flows, migration agents, MCP servers, and task-specific instructions around real development needs.",
         },
         {
           title: "Security and traceability",
@@ -125,12 +125,12 @@ export const profile = {
         {
           title: "Estándares y catálogo",
           description:
-            "Defino artefactos reutilizables, convenciones, criterios de revisión, ownership, ciclo de vida y versionamiento para agentes, skills e instrucciones.",
+            "Defino artefactos reutilizables, convenciones, criterios de revisión, ownership, ciclo de vida y versionamiento para agentes, skills, instructions, prompts y servidores MCP.",
         },
         {
           title: "Agentes e instrucciones",
           description:
-            "Diseño y evalúo coding agents, flujos de análisis de repositorios, servidores MCP e instrucciones específicas alrededor de necesidades reales de desarrollo.",
+            "Diseño y evalúo coding agents, flujos de análisis de repositorios, agentes de migración, servidores MCP e instrucciones específicas alrededor de necesidades reales de desarrollo.",
         },
         {
           title: "Seguridad y trazabilidad",
@@ -152,13 +152,13 @@ export const profile = {
       items: [
         {
           company: "Softtek · Rimac Seguros",
-          role: "Senior Backend Developer",
+          role: "Senior Backend Developer & AI Coding Technical Reference",
           period: "Jan 2025 - Present",
           bullets: [
-            "Modernizes Rimac's microservices ecosystem in a regulated insurance environment, upgrading Node.js and TypeScript repositories for compatibility, security, and maintainability.",
-            "Coordinates with architecture, security, infrastructure, development, and DevSecOps teams to unblock technical delivery, standardize repositories, and support safer repeatable deployments.",
+            "Acts as a technical reference in Rimac's regulated insurance environment, coordinating backend modernization with architecture, security, infrastructure, development, and DevSecOps teams.",
+            "Drives modernization flows across Node.js and TypeScript microservices to improve compatibility, security, maintainability, traceability, and controlled deployments.",
             "Designed and implemented a custom MCP server with GitHub Copilot Enterprise to automate repository analysis and recurring operational tasks, automating more than 50% of a blocked workflow.",
-            "Collaborates on AI-assisted engineering initiatives that expand internal tooling with agents, skills, MCP servers, and database-connected workflows.",
+            "Collaborates with AI/CAL leadership to evolve agents, skills, instructions, MCP servers, and database-connected workflows as reusable backend standards.",
           ],
         },
         {
@@ -174,7 +174,7 @@ export const profile = {
         },
         {
           company: "CEINTEC",
-          role: "Full Stack Developer Analyst",
+          role: "Full Stack Developer · Technical Coordination",
           period: "Aug 2020 - Oct 2021",
           bullets: [
             "Led development of an e-commerce platform in React and two mobile applications for Opticenter Vision, coordinating design, QA, and business requirements with multidisciplinary teams.",
@@ -190,13 +190,13 @@ export const profile = {
       items: [
         {
           company: "Softtek · Rimac Seguros",
-          role: "Analista Desarrollador Backend Senior",
+          role: "Backend Senior & Referente Técnico en AI Coding",
           period: "Ene 2025 - Actualidad",
           bullets: [
-            "Modernizo el ecosistema de microservicios de Rimac en un entorno asegurador regulado, actualizando repositorios Node.js y TypeScript para mejorar compatibilidad, seguridad y mantenibilidad.",
-            "Coordino con arquitectura, seguridad, infraestructura, desarrollo y DevSecOps para destrabar entregas técnicas, estandarizar repositorios y sostener despliegues más seguros y repetibles.",
+            "Actúo como referente técnico en el entorno regulado de Rimac, coordinando modernización backend con arquitectura, seguridad, infraestructura, desarrollo y DevSecOps.",
+            "Impulso flujos de modernización sobre microservicios Node.js y TypeScript para mejorar compatibilidad, seguridad, mantenibilidad, trazabilidad y despliegues controlados.",
             "Diseñé e implementé un servidor MCP personalizado con GitHub Copilot Enterprise para automatizar análisis de repositorios y tareas operativas recurrentes, automatizando más del 50% de un flujo bloqueado.",
-            "Colaboro en iniciativas de ingeniería asistida por IA que amplían las herramientas internas con agentes, skills, servidores MCP y flujos conectados a base de datos.",
+            "Colaboro con liderazgo de IA/CAL para evolucionar agentes, skills, instructions, servidores MCP y flujos conectados a base de datos como estándares reutilizables para backend.",
           ],
         },
         {
@@ -212,7 +212,7 @@ export const profile = {
         },
         {
           company: "CEINTEC",
-          role: "Analista Desarrollador Full Stack",
+          role: "Full Stack Developer · Coordinación Técnica",
           period: "Ago 2020 - Oct 2021",
           bullets: [
             "Lideré el desarrollo de un e-commerce en React y dos aplicaciones móviles para Opticenter Vision, coordinando diseño, QA y requisitos de negocio con equipos multidisciplinarios.",
